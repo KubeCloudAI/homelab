@@ -37,4 +37,7 @@ spec:
         hosts:
           - grs.devopsailab.com
 
-        tls: []
+        tls:
+          - secretName: grafa-tls-secret
+            hosts:
+              - grs.devopsailab.com
