@@ -1,6 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-# uncommeting below reosources will not load the app and will also delete it from the cluster. This is used as an hard reset.
+# uncommeting below reosources will not load the app and will also delete it from the cluster. This is used as an hard reset. 
+#This also deletes the entire namespace and all the resources in it. So use it with caution
   - linkding
-  #- audiobookshelf
+  - audiobookshelf
